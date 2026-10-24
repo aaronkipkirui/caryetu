@@ -298,3 +298,61 @@ img {
     background: var(--hover-color);
     transition: 0.3s all linear;
 }
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.team-box{
+    position: relative;
+    height: 320px;
+}
+.team-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding-right: 1.4rem;
+}
+.team-data{
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 1rem;
+    padding: 15px;
+    width: 95%;
+    color: var(--bg-color);
+    background: var(--main-color);
+    overflow: hidden;
+}
+.team-data h3{
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+.team-data span {
+    font-size: 0.875rem;
+}
+/* .team-social {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: -2.4rem;
+    transition: 408ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+.team-social .bx{
+    font-size: 1.2rem;
+    color: var(--bg-color);
+}
+.team-social a{
+    font-size: 0.875rem;
+    color: var(--bg-color);
+}
+/* .team-box:hover .team-social{
+    margin-bottom: 0;
+    transition: 408ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+.team-box:hover .team-data {
+    color: var(--bg-color);
+    background: var(--text-color);
+}
