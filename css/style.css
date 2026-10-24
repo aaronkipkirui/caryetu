@@ -348,6 +348,10 @@ img {
     font-size: 0.875rem;
     color: var(--bg-color);
 }
+/* .team-social .bx-copy{
+    font-size: 0.8rem;
+    color: var(--bg-color);
+} */
 /* .team-box:hover .team-social{
     margin-bottom: 0;
     transition: 408ms all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -355,4 +359,47 @@ img {
 .team-box:hover .team-data {
     color: var(--bg-color);
     background: var(--text-color);
+}
+.accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.accordion-item{
+    flex: 1 1 22rem;
+    border-radius: 0.25rem;
+}
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #888787;
+}
+.accordion-title{
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.3s all;
+}
+.accordion-icon {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    transition: 0.3s all;
+}
+.accordion-content {
+    border-radius: 0.25rem;
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s all;
+}
+.accordion-answer{
+    font-size: 0.9rem;
+    padding: 10px 0;
+}
+.accordion-open .accordion-icon {
+    transform: rotate(45deg);
+}
+.accordion-open .accordion-title {
+    font-weight: 600;
 }
